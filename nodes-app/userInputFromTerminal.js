@@ -1,12 +1,7 @@
 const chalk = require('chalk');
 const yargs = require('yargs');
 const command = process.argv[2];
-// console.log(process.argv);
-// if(command === 'add'){
-//     console.log(chalk.green('added'));
-// }else if (command === 'remove'){
-//     console.log(chalk.red('removed'));
-// }
+
 
 //change version
 yargs.version('1.1.1');
@@ -29,8 +24,7 @@ yargs.command({
             } 
         },
     handler: function(argv){
-        console.log('title ' +argv.title);
-        console.log('body ' + argv.body);
+       
     }
 });
 
