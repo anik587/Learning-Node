@@ -24,4 +24,30 @@ const event  = {
     }
 }
 
-event.printGuest();
+
+const event2 = {
+    name: 'BDay Party',
+    guestList: ['anik', 'islam', 'shojib'],
+    printGuest() {
+        console.log('Guest List For ' + this.name);
+        this.guestList.forEach(function(d, i) {
+            console.log(d + ' is attending ' + this.name);
+        })
+    }
+}
+
+
+const event3 = {
+    name: 'BDay Party',
+    guestList: ['anik', 'islam', 'shojib'],
+    printGuest: function() {
+        console.log('Guest List For ' + this.name);
+        this.guestList.forEach((d, i) => {
+            console.log(d + ' is attending ' + this.name);
+        })
+    }
+}
+
+//event.printGuest();
+//event2.printGuest();
+event3.printGuest();
