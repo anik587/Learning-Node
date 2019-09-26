@@ -1,7 +1,8 @@
 const doWorkProise = new Promise((resolve, reject)=>{
         setTimeout(()=>{
+
+            reject('something went wrong')
             resolve([4,5,6])
-            //reject('something went wrong')
         }, 2000)
 })
 
